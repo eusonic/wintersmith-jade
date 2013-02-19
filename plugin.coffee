@@ -18,7 +18,7 @@ module.exports = (wintersmith, callback) ->
       # all we want to do here, is to render the body
       options =
         filename: path.join @_base, @_filename
-        pretty: true
+        pretty: false
 
       htmlFn = jade.compile @_text, options
       htmlFn @_metadata
